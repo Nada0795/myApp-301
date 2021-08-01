@@ -2,7 +2,7 @@ import React from 'react';
 import HornedBeasts from './HornedBeasts';
 // import { data } from 'jquery';
 
- class main extends Component {
+ class main extends React.Component {
     render() {
         return (
             <main>

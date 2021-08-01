@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
- class header extends Component {
+ class header extends React.Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ import React from 'react'
     }
 }
 
-export default header
+export default header;
