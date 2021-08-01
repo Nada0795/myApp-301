@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './App.css';
 import header from './Components/header';
 import footer from './Components/footer';
 import main from './Components/main';
@@ -8,9 +9,9 @@ import main from './Components/main';
   render() {
     return (
       <div>
-        <header/>
-        <main/>
-        <footer/>
+        <header />
+        <main />
+        <footer />
 
       </div>
     )

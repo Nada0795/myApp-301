@@ -4,7 +4,7 @@ import React from 'react'
     render() {
         return (
             <div>
-&copy; Nada-Alabdullah
+<p> &copy; Nada-Alabdullah </p> 
             </div>
         )
     }
