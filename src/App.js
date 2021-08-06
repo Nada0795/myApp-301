@@ -1,22 +1,33 @@
-import React from 'react';
-import './App.css';
-import header from './Components/header';
-import footer from './Components/footer';
-import main from './Components/main';
+import React from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Header from "./Components/header";
+import Footer from "./Components/footer";
+import Main from "./Components/main";
 // import HornedBeasts from './Components/HornedBeasts'
 
- class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
-      <div>
-        <header />
-        <main />
-        <footer />
+      <Container>
+        <Row>
+          <Header />
+        </Row>
 
-      </div>
-    )
+        <Row>
+          <Main />
+        </Row>
+        
+        <Row>
+          <Footer />
+        </Row>
+        
+      </Container>
+    );
   }
 }
 
 export default App;
-
