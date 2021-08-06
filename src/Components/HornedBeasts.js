@@ -6,10 +6,10 @@ import React from 'react'
         return (
             <div>
 <h2>{this.props.title}</h2>
-<img src={this.props.imageUrl} alt="" title=""/>
+<img style={{width:"400px"} } src={this.props.imageUrl} alt={this.props.title} title={this.props.title}/>
 <p>{this.props.description}</p>
-<p>{this.props.keyword}</p>
-<p>{this.props.horns}</p>
+{/* <p>{this.props.alt}</p> */}
+{/* <p>Number Of Horns : {this.props.horns}</p> */}
 
 
 
