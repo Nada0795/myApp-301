@@ -11,6 +11,8 @@ import Col from "react-bootstrap/Col";
             {this.props.data.map(item=>
               
               {
+
+
                   return (
                 <Col>
 
@@ -18,9 +20,12 @@ import Col from "react-bootstrap/Col";
                 title={item.title}
                 imageUrl={item.image_url}
                 description={item.description}
-              
+                show={this.props.show}
+                modalData={this.props.modalData}
                 />
                 
+
+
                             </Col> )
               }  
                 )}

@@ -12,10 +12,17 @@ this.state = {
 
      }
      
-likesNum=()=>{
-this.setState({
+likesNum=async()=>{
+await this.setState({
     likes: this.state.likes+1
 })
+
+}
+
+dataHandle = async()=>{
+await this.likesNum();
+this.props.modalData(this.props.title,this.props.imageUrl , this.props.description ,this.state.likes);
+this.props.show ();
 
 }
 
@@ -23,8 +30,8 @@ this.setState({
         return (
         
 
-<Card style={{ width: '18rem' }}>
-  <Card.Img onClick={this.likesNum} variant="top" src={this.props.imageUrl} />
+<Card onClick={this.dataHandle} style={{ width: '18rem' }} >
+  <Card.Img variant="top" src={this.props.imageUrl} />
   <Card.Body>
     <Card.Title>{this.props.title}</Card.Title>
     <Card.Text>
