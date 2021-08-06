@@ -7,6 +7,8 @@ import Col from "react-bootstrap/Col";
 import Header from "./Components/header";
 import Footer from "./Components/footer";
 import Main from "./Components/main";
+import data from "./data.json"
+
 // import HornedBeasts from './Components/HornedBeasts'
 
 class App extends React.Component {
@@ -18,7 +20,7 @@ class App extends React.Component {
         </Row>
 
         <Row>
-          <Main />
+          <Main data={data}/>
         </Row>
         
         <Row>
